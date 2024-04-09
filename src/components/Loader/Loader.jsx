@@ -1,15 +1,18 @@
-import { Vortex } from 'react-loader-spinner';
+import { LineWave } from 'react-loader-spinner';
 
 const Loader = () => {
   return (
-    <Vortex
+    <LineWave
       visible={true}
-      height="120"
-      width="120"
-      ariaLabel="vortex-loading"
+      height="200"
+      width="200"
+      color="#4fa94d"
+      ariaLabel="line-wave-loading"
       wrapperStyle={{}}
-      wrapperClass="vortex-wrapper"
-      colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
+      wrapperClass=""
+      firstLineColor=""
+      middleLineColor=""
+      lastLineColor=""
     />
   );
 };

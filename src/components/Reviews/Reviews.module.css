@@ -1,0 +1,26 @@
+.wrapper {
+  max-width: 1440px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.author {
+  text-align: center;
+  font-size: 24px;
+}
+.content {
+  margin-top: 10px;
+}

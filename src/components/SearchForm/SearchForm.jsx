@@ -1,27 +1,15 @@
-import toast, { Toaster } from 'react-hot-toast';
-import css from './SearchBar.module.css';
+import css from './SearchForm.module.css';
+import { Toaster } from 'react-hot-toast';
 
-const SearchBar = ({ onSubmit }) => {
-  const handleSubmit = e => {
-    e.preventDefault();
-
-    const notify = () => toast('Please, enter a keyword to search');
-    if (e.target.search.value.trim() === '') {
-      notify();
-      return;
-    }
-
-    onSubmit(e.target.search.value.trim());
-    e.target.reset();
-  };
+const SearchForm = ({ handleSubmit }) => {
   return (
-    <header className={css.header}>
+    <div>
       <form onSubmit={handleSubmit} className={css.form}>
         <input
           type="text"
           autoComplete="off"
           autoFocus
-          placeholder="Search images and photos"
+          placeholder="Search films"
           name="search"
           className={css.input}
         />
@@ -39,8 +27,8 @@ const SearchBar = ({ onSubmit }) => {
           }}
         />
       </form>
-    </header>
+    </div>
   );
 };
 
-export default SearchBar;
+export default SearchForm;
