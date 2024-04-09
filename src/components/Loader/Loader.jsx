@@ -1,18 +1,18 @@
 import { LineWave } from 'react-loader-spinner';
+import css from './Loader.module.css';
 
 const Loader = () => {
   return (
     <LineWave
       visible={true}
-      height="200"
-      width="200"
+      height="300"
+      width="300"
       color="#4fa94d"
       ariaLabel="line-wave-loading"
-      wrapperStyle={{}}
-      wrapperClass=""
-      firstLineColor=""
-      middleLineColor=""
-      lastLineColor=""
+      wrapperClass={css.wrapper}
+      firstLineColor="black"
+      middleLineColor="black"
+      lastLineColor="black"
     />
   );
 };
