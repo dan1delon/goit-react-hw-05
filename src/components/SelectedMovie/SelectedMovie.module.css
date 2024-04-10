@@ -37,14 +37,14 @@
 .returnBtn {
   padding: 10px 15px;
   border-radius: 10px;
-  border: none;
-  background-color: black;
-  color: white;
+  border: 1px solid black;
   cursor: pointer;
-  transition: box-shadow 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .returnBtn:hover {
+  color: white;
+  background-color: black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
