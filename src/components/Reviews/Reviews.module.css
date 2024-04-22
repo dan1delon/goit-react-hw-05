@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 70px;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -14,11 +15,10 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 
 .author {
-  text-align: center;
   font-size: 24px;
   color: rgb(29, 124, 161);
 }
@@ -27,4 +27,6 @@
   padding: 30px;
   border: 1px solid black;
   border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

@@ -24,6 +24,9 @@ const MovieList = ({ films }) => {
                 className={css.img}
               />
               <p className={css.description}>{film.title}</p>
+              <p className={css.descriptionRating}>
+                &#127775;{film.vote_average}
+              </p>
             </Link>
           </li>
         );

@@ -29,7 +29,7 @@ const SelectedMovie = ({ film }) => {
           <h2 className={css.title}>{film.title}</h2>
           <div className={css.firstBlock}>
             <p>Release date: {film.release_date}</p>
-            <p>Rating: {film.vote_average}</p>
+            <p>Rating&#127775;: {film.vote_average}</p>
           </div>
           <div className={css.overview}>
             <h3>Overview</h3>
