@@ -24,6 +24,7 @@ const SelectedMovie = ({ film }) => {
               : defaultImg
           }
           alt="poster"
+          className={css.img}
         />
         <div className={css.contentWrapper}>
           <h2 className={css.title}>{film.title}</h2>
