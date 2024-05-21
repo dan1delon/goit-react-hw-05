@@ -1,8 +1,10 @@
 .wrapper {
   max-width: 1440px;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 70px;
   margin-bottom: 50px;
 }
@@ -18,15 +20,30 @@
   gap: 50px;
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .author {
   font-size: 28px;
   color: rgb(29, 124, 161);
 }
 .content {
   margin-top: 20px;
-  padding: 30px;
+  padding: 15px;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper {
+    padding: 30px;
+  }
+  .content {
+    padding: 30px;
+  }
 }

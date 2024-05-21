@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1440px;
-  padding: 30px;
+  padding: 15px;
   margin-bottom: 50px;
 }
 .title {
@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-top: 70px;
 }
 .item {
@@ -35,4 +35,10 @@
 .character {
   overflow: hidden;
   text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+  .wrapper {
+    padding: 30px;
+  }
 }
